@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    background-color: #6aaf4c;
+    padding: 5px;
+}
+
+#app {
+    margin-top: 20px;
+}
+
+
+input {
+    padding: 8px;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px;
+    width: 100%;
+    background-color: #6aaf4c;
+    color: #242424;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #49a036;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+li button {
+    background-color: #49a036;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #344b09;
+}
+
+
+
+li.completed span {
+    text-decoration: line-through;
+    color: #b8bb23;
+}
+
+li.editing input {
+    display: inline-block;
+    width: 60%;
+}
+
+li.editing button {
+    background-color: #4caf50;
+}
+
+/* Adding some basic animations */
+
+li {
+    transition: background-color 0.3s;
+}
+
+li button, li input {
+    transition: opacity 0.3s;
+}
+
+li:hover {
+    background-color: #839964;
+}
+
+li button:hover, li input:hover {
+    opacity: 0.8;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        max-width: 800px;
+    }
+
+    input, button {
+        width: auto;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 8px 0;
+    }
+}
+
